@@ -14,9 +14,9 @@ from utils.text_preprocess import LemmaTokenizer
 from utils.transformers import SentenceEmbeddingTransformer
 
 # Load your machine learning model
-pipeline_model = joblib.load('../best_model.pkl')
+pipeline_model = joblib.load('../models/best_model.pkl')
 
-word2vec_model_file = '../models/word2vec_200.model'
+word2vec_model_file = '../models/word2vec_100.model'
 model = Word2Vec.load(word2vec_model_file)
 
 # Create the main window

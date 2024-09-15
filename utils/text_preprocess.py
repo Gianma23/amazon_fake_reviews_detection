@@ -5,8 +5,6 @@ from nltk.corpus import stopwords
 import re
 from bs4 import BeautifulSoup
 
-nltk.download('stopwords')
-nltk.download('punkt')
 
 # tokenize words
 # remove stop words
