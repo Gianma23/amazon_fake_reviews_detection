@@ -22,14 +22,13 @@ model = Word2Vec.load(word2vec_model_file)
 # Create the main window
 root = tk.Tk()
 root.title("Fake reviews detector")
-#root.geometry("490x400")
 default_font = ('Helvetica', 12)
 
 # Create an entry field for custom data
 custom_data_label = tk.Label(root, text="Enter Review Text:", font=default_font)
 custom_data_label.grid(row=0, column=0, padx=10, pady=10, sticky='w')
 
-custom_data_entry = tk.Text(root, height=10, width=50, font=default_font)  # Set height for multiple lines
+custom_data_entry = tk.Text(root, height=10, width=50, font=default_font)
 custom_data_entry.grid(row=1, column=0, padx=10, pady=5)
 
 verified_purchase_var = tk.IntVar(value=1)  # Default is 1 (Verified)
